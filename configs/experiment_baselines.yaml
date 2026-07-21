@@ -1,0 +1,11 @@
+experiment_name: centralized_baselines
+dataset:
+  path: "PATH/TO/final_balanced_dataset.csv"
+  test_split: 0.20
+models:
+  - random_forest
+  - xgboost
+  - logistic_regression
+output:
+  results_dir: reports/results/baselines
+  figures_dir: reports/figures/comparisons

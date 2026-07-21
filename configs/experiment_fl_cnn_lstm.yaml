@@ -1,0 +1,19 @@
+experiment_name: fl_cnn_lstm
+dataset:
+  path: "PATH/TO/final_balanced_dataset.csv"
+  test_split: 0.20
+federated:
+  num_clients: 5
+  num_rounds: 10
+  local_epochs: 3
+  proximal_mu: 0.01
+  non_iid_alpha: 0.5
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  optimizer: adamw
+output:
+  artifacts_dir: artifacts
+  figures_dir: reports/figures/cnn_lstm
+  results_dir: reports/results/cnn_lstm
+  logs_dir: reports/logs
